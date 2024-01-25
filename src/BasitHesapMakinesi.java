@@ -29,10 +29,13 @@ public class BasitHesapMakinesi {
                 System.out.println("çarpım: "+(n1*n2));
                 break;
             case 4:
-                System.out.println("bölüm: "+(n1/n2));
+                if (n2!=0){
+                    System.out.println("bölüm: "+(n1/n2));
+                } else {
+                    System.out.println("bir sayı sıfıra bölünemez");
+                }
                 break;
-            case 6:
-                System.out.println("bir sayı sıfıra bölünemez");
+
             default:
                 System.out.println("yanlış seçim yaptınız");
 
